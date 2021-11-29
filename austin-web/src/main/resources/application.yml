@@ -21,13 +21,13 @@ tencent:
 # 数据库相关的信息配置 TODO
 spring:
   datasource:
-    url:
-    username:
-    password:
-    driver-class-name:
+    url: jdbc:mysql://150.158.50.190:3306/austin?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: '@Zby746459'
+    driver-class-name: com.mysql.jdbc.Driver
   # kafka相关的信息配置 TODO
   kafka:
-    bootstrap-servers:
+    bootstrap-servers: 150.158.50.190:9092
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
@@ -38,6 +38,9 @@ spring:
         offset:
           reset: earliest
 
+  output:
+    ansi:
+      enabled: always
 # tomcat / HikariPool(数据库连接池 配置） TODO
 # 消息topicName TODO
 austin:
