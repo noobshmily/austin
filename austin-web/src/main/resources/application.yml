@@ -41,9 +41,9 @@ spring:
       enable-auto-commit: true
   # redis 相关配置 TODO
   redis:
-    host:
-    port:
-    password:
+    host: 150.158.50.190
+    port: 6379
+    password: 'austin'
 
   output:
     ansi:

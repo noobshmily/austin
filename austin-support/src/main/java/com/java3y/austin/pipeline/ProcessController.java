@@ -33,7 +33,7 @@ public class ProcessController {
      * @param context
      * @return 返回上下文内容
      */
-    public ProcessContext process(ProcessContext context) {
+    public ProcessContext  process(ProcessContext context) {
 
         /**
          * 前置检查
